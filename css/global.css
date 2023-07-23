@@ -59,4 +59,116 @@ a {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+header {
+  background-color: #1C1E53;
+}
+header > div {
+  max-width: 1280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 16px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header > div .logo {
+  width: 122px;
+  height: 45px;
+}
+header > div .nav-bar {
+  width: 706px;
+  padding: 16px 0;
+}
+header > div .nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header > div .nav-bar ul li {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+header > div .nav-bar ul li a {
+  color: #BBBBCB;
+}
+header > div .nav-bar ul li .Home {
+  color: #FFFFFF;
+}
+header > div .nav-bar ul li .Contact {
+  width: 185px;
+  padding: 16px 48px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+}
+
+.s-1 {
+  max-width: 100%;
+  width: 100%;
+  background-color: #1C1E53;
+}
+.s-1 > div {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 122px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.s-1 > div img {
+  width: 478px;
+  height: 395px;
+}
+.s-1 > div > div {
+  width: 582px;
+}
+.s-1 > div > div h1 {
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px;
+  margin-bottom: 24px;
+}
+.s-1 > div > div p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #BBBBCB;
+  margin-bottom: 48px;
+}
+.s-1 > div > div a div {
+  color: #1B1C2B;
+  width: 230px;
+  padding: 16px 56px;
+  border-radius: 41px;
+  background-color: #FCD980;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
 }/*# sourceMappingURL=global.css.map */

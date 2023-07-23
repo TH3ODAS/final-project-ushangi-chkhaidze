@@ -1,0 +1,53 @@
+.s-1{
+    max-width: 100%;
+    width: 100%;
+    background-color: $TintBlue;
+    &>div{
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 122px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        img{
+            width: 478px;
+            height: 395px;
+        }
+        &>div{
+            width: 582px;
+            h1{
+                color: $text-color-white;
+                font-family: Poppins;
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 74px;
+                margin-bottom: 24px;
+            }
+            p{
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                color: $text-color-lightblue;
+                margin-bottom: 48px;
+            }
+            a{
+                div{
+                    color: $link-color-black;
+                    width: 230px;
+                    padding: 16px 56px;
+                    border-radius: 41px;
+                    background-color: $Yellow;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+header{
+    background-color: $TintBlue;
+    &>div{
+        max-width: 1280px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        padding: 16px 0;
+        justify-content: space-between;
+        .logo{
+            width: 122px;
+            height: 45px;
+        }
+        .nav-bar{
+            width: 706px;
+            padding: 16px 0;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    a{
+                        color: $text-color-lightblue;
+                    }
+                    .Home{
+                        color: $text-color-white;
+                    }
+                    .Contact{
+                        width: 185px;
+                        
+                        padding: 16px 48px;
+                        border-radius: 41px;
+                        border: 2px solid rgba(244, 246, 252, 0.20);
+                    }
+                }
+            }
+        }
+    }
+}
