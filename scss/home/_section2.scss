@@ -1,0 +1,73 @@
+.s-2{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    div:first-child{
+        width: 656px;
+        background-image: url(../../images/healthy-lifestyle-food-sport-concept-athlete-s-equipment-fresh-fruit-black-background_61573-3387.avif);
+        padding: 96px 110px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        h2{
+            font-family: Poppins;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 74px;
+            color: $text-color-white;
+        }
+    }
+    .login{
+        width: 624px;
+        background-color: $TintBlue;
+        padding: 48px 96px;
+        h3{
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px;
+            color: $text-color-white;
+            margin-bottom: 16px;
+        }
+        h4{
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            color: $text-color-white;
+            margin-bottom: 40px;
+        }
+        form{
+            input{
+                width: 432px;
+                border-radius: 8px;
+                outline: none;
+                border: 1.5px solid rgba(255, 255, 255, 0.05);
+                padding: 18px 32px;
+                background-color: $TintBlue;
+                color: $Grey;
+                margin-bottom: 16px;
+            }
+            #submit{
+                display: flex;
+                width: 432px;
+                padding: 15px 51px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background-color: $Yellow;
+                border-radius: 41px;
+                color: $link-color-black;
+                cursor: pointer;
+                &:hover{
+                    background-color: $hover-background-color;
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}

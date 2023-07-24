@@ -2,6 +2,7 @@
     max-width: 100%;
     width: 100%;
     background-color: $TintBlue;
+    margin-bottom: 63px;
     &>div{
         max-width: 1280px;
         width: 100%;
@@ -46,6 +47,11 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: 32px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $hover-background-color;
+                        color: $hover-color;
+                    }
                 }
             }
         }
