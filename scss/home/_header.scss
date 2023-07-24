@@ -7,6 +7,9 @@ header{
         margin: 0 auto;
         padding: 16px 0;
         justify-content: space-between;
+        @media(max-width:1672px){
+            width: 95%;
+        }
         .logo{
             width: 122px;
             height: 45px;
@@ -35,6 +38,11 @@ header{
                         padding: 16px 48px;
                         border-radius: 41px;
                         border: 2px solid rgba(244, 246, 252, 0.20);
+                        &:hover{
+                            background-color: $link-color-black;
+                            color: $text-color-white;
+                            transition: 0.7s;
+                        }
                     }
                 }
             }

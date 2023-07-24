@@ -76,6 +76,11 @@ header > div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1672px) {
+  header > div {
+    width: 95%;
+  }
+}
 header > div .logo {
   width: 122px;
   height: 45px;
@@ -113,6 +118,12 @@ header > div .nav-bar ul li .Contact {
   border-radius: 41px;
   border: 2px solid rgba(244, 246, 252, 0.2);
 }
+header > div .nav-bar ul li .Contact:hover {
+  background-color: #1B1C2B;
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
 
 .s-1 {
   max-width: 100%;
@@ -136,12 +147,38 @@ header > div .nav-bar ul li .Contact {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1064px) {
+  .s-1 > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .s-1 > div img {
   width: 478px;
   height: 395px;
 }
 .s-1 > div > div {
   width: 582px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 1064px) {
+  .s-1 > div > div {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .s-1 > div > div h1 {
   color: #FFFFFF;
@@ -177,6 +214,8 @@ header > div .nav-bar ul li .Contact {
 .s-1 > div > div a div:hover {
   background-color: #FDE4A6;
   color: #585858;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .s-2 {
@@ -257,4 +296,6 @@ header > div .nav-bar ul li .Contact {
 .s-2 .login form #submit:hover {
   background-color: #FDE4A6;
   color: #585858;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }/*# sourceMappingURL=global.css.map */

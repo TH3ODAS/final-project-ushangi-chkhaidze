@@ -11,12 +11,24 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        @media(max-width:1064px){
+            flex-direction: column;
+            align-items: center;
+        }
+        @media(max-width:1672px){
+            width: 95%;
         img{
             width: 478px;
             height: 395px;
         }
         &>div{
             width: 582px;
+            display: flex;
+            flex-direction: column;
+            @media (max-width:1064px){
+                text-align: center;
+                align-items: center;
+            }
             h1{
                 color: $text-color-white;
                 font-family: Poppins;
@@ -51,6 +63,7 @@
                     &:hover{
                         background-color: $hover-background-color;
                         color: $hover-color;
+                        transition: 0.7s;
                     }
                 }
             }
