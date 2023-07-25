@@ -2,7 +2,6 @@
     max-width: 100%;
     width: 100%;
     background-color: $TintBlue;
-    margin-bottom: 63px;
     &>div{
         max-width: 1280px;
         width: 100%;
@@ -17,6 +16,7 @@
         }
         @media(max-width:1672px){
             width: 95%;
+        }
         img{
             width: 478px;
             height: 395px;
