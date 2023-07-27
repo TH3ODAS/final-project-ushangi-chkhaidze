@@ -79,7 +79,7 @@ a {
   color: #282938;
 }
 
-.absu-s-3, .abus-s-2, .abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
+.abus-s-4 .team-container, .absu-s-3, .abus-s-2, .abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
   max-width: 1280px;
   width: 100%;
   display: -webkit-box;
@@ -639,6 +639,7 @@ footer .ftr-container .yellow-box .tel a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 128px;
 }
 .absu-s-3 h2 {
   font-family: Poppins;
@@ -712,4 +713,65 @@ footer .ftr-container .yellow-box .tel a {
   font-weight: 400;
   line-height: 28px;
   color: #282938;
+}
+
+.abus-s-4 {
+  max-width: 100%;
+  width: 100%;
+  background-color: #F4F6FC;
+  padding: 128px 0;
+}
+.abus-s-4 .team-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.abus-s-4 .team-container h3 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  color: #282938;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.abus-s-4 .team-container .card-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.abus-s-4 .team-container .card-wrapper .card {
+  width: 296px;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.abus-s-4 .team-container .card-wrapper .card img {
+  margin-bottom: 30px;
+}
+.abus-s-4 .team-container .card-wrapper .card h2 {
+  margin-bottom: 2px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  color: #1B1C2B;
+}
+.abus-s-4 .team-container .card-wrapper .card h4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #1B1C2B;
 }/*# sourceMappingURL=global.css.map */
