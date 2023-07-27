@@ -10,11 +10,8 @@ footer{
       width: 100%;
       margin: 0 auto;
          .ftr-box{
-            max-width: 1280px;
-            width: 100%;
-            display: flex;
+            @extend %container;
             justify-content: space-between;
-            margin: 0 auto;
             div{
                display: flex;
                width: 399px;

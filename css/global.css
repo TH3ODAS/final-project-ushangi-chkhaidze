@@ -79,16 +79,19 @@ a {
   color: #282938;
 }
 
-body header {
-  background-color: #1C1E53;
-}
-body header > div {
+.abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
   max-width: 1280px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+}
+
+body header {
+  background-color: #1C1E53;
+}
+body header > div {
   padding: 16px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -133,7 +136,7 @@ body header > div .nav-bar ul li {
 body header > div .nav-bar ul li a {
   color: #BBBBCB;
 }
-body header > div .nav-bar ul li .Home {
+body header > div .nav-bar ul li .active {
   color: #FFFFFF;
 }
 body header > div .nav-bar ul li .Contact {
@@ -254,7 +257,7 @@ body header > div .nav-bar ul li .Contact:hover {
   background-color: #F4F6FC;
   margin-bottom: 128px;
 }
-.s-2 > p {
+.s-2 .headline {
   font-family: Poppins;
   font-size: 48px;
   font-style: normal;
@@ -262,14 +265,11 @@ body header > div .nav-bar ul li .Contact:hover {
   line-height: 64px;
   color: #282938;
   margin-bottom: 47px;
+  width: 630px;
+  margin: 0 auto;
+  margin-bottom: 47px;
 }
 .s-2 > div {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -318,15 +318,9 @@ body header > div .nav-bar ul li .Contact:hover {
   margin-bottom: 12px;
 }
 .s-3 {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 128px;
 }
-.s-3 div:first-child {
+.s-3 .bg-box {
   width: 656px;
   background-image: url(https://img.freepik.com/premium-photo/healthy-lifestyle-food-sport-concept-athlete-s-equipment-fresh-fruit-black-background_61573-3387.jpg);
   padding: 96px 110px;
@@ -334,7 +328,7 @@ body header > div .nav-bar ul li .Contact:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.s-3 div:first-child h2 {
+.s-3 .bg-box h2 {
   font-family: Poppins;
   font-size: 54px;
   font-style: normal;
@@ -417,15 +411,9 @@ footer .ftr-container {
   margin: 0 auto;
 }
 footer .ftr-container .ftr-box {
-  max-width: 1280px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
 }
 footer .ftr-container .ftr-box div {
   display: -webkit-box;
@@ -536,4 +524,48 @@ footer .ftr-container .yellow-box .tel a {
   font-weight: 400;
   line-height: 28px;
   color: #282938;
+}
+
+.abus-s-1 {
+  padding-top: 128px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 128px;
+}
+.abus-s-1 div {
+  width: 595px;
+  padding-top: 24px;
+  padding-bottom: 9px;
+}
+.abus-s-1 div h4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #282938;
+  margin-bottom: 8px;
+}
+.abus-s-1 div h3 {
+  width: 100%;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px;
+  color: #282938;
+  margin-bottom: 31px;
+}
+.abus-s-1 div p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #282938;
+}
+.abus-s-1 img {
+  width: 547px;
+  height: 336px;
 }/*# sourceMappingURL=global.css.map */

@@ -1,10 +1,7 @@
 .s-3{
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
+    @extend %container;
     margin-bottom: 128px;
-    div:first-child{
+    .bg-box{
         width: 656px;
         background-image: url(https://img.freepik.com/premium-photo/healthy-lifestyle-food-sport-concept-athlete-s-equipment-fresh-fruit-black-background_61573-3387.jpg);
         padding: 96px 110px;

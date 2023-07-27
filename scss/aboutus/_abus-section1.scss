@@ -1,0 +1,42 @@
+.abus-s-1{
+    @extend %container;
+    padding-top: 128px;
+    justify-content: space-between;
+    margin-bottom: 128px;
+    div{
+        width: 595px;
+        padding-top: 24px;
+        padding-bottom: 9px;
+        h4{
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            color: $DarkBlue;
+            margin-bottom: 8px;
+        }
+        h3{
+            width: 100%;
+            font-family: Poppins;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 74px;
+            color: $DarkBlue;
+            margin-bottom: 31px;
+        }
+        p{
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            color: $DarkBlue;
+        }
+    }
+    img{
+        width: 547px;
+        height: 336px;
+    }
+}
