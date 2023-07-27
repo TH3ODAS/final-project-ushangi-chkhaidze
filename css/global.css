@@ -79,7 +79,7 @@ a {
   color: #282938;
 }
 
-.abus-s-4 .team-container, .absu-s-3, .abus-s-2, .abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
+.news-s-1, .abus-s-4 .team-container, .absu-s-3, .abus-s-2, .abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
   max-width: 1280px;
   width: 100%;
   display: -webkit-box;
@@ -774,4 +774,64 @@ footer .ftr-container .yellow-box .tel a {
   font-weight: 400;
   line-height: 28px;
   color: #1B1C2B;
+}
+
+.news-s-1 {
+  border: 2px solid red;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+.news-s-1 h2 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  max-width: 630px;
+  width: 100%;
+  color: #282938;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.news-s-1 .card-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.news-s-1 .card-wrapper .card {
+  background-color: #F4F6FC;
+  padding: 50px 32px 48px 48px;
+  width: 405px;
+}
+.news-s-1 .card-wrapper .card .fa-heart-circle-plus, .news-s-1 .card-wrapper .card .fa-smoking, .news-s-1 .card-wrapper .card .fa-wine-bottle {
+  margin-bottom: 26px;
+  color: #2405F2;
+}
+.news-s-1 .card-wrapper .card h3 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  color: #282938;
+  margin-bottom: 12px;
+}
+.news-s-1 .card-wrapper .card p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #282938;
 }/*# sourceMappingURL=global.css.map */

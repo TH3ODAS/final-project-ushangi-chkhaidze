@@ -1,0 +1,52 @@
+.news-s-1{
+    @extend %container;
+    border: 2px solid red;
+    flex-direction: column;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    h2{
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px; 
+        max-width: 630px;
+        width: 100%;
+        color: $DarkBlue;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .card-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card{
+            background-color: $Grey;
+            padding: 50px 32px 48px 48px;
+            width: 405px;
+            .fa-heart-circle-plus, .fa-smoking, .fa-wine-bottle{
+                margin-bottom: 26px;
+                color: $RoyalBlue;
+            }
+            h3{
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36px;
+                color: $DarkBlue;
+                margin-bottom: 12px;
+            }
+            p{
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                color: $DarkBlue;
+            }
+        }
+    }
+}
