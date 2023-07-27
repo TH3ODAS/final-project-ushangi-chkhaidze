@@ -1,0 +1,15 @@
+.absu-s-3{
+    @extend %container;
+    border: 2px solid red;
+    padding-top: 128px;
+    justify-content: center;
+    h2{
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px;
+        color: $DarkBlue;
+        margin-bottom: 48px;
+    }
+}

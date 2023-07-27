@@ -79,7 +79,7 @@ a {
   color: #282938;
 }
 
-.abus-s-2, .abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
+.absu-s-3, .abus-s-2, .abus-s-1, footer .ftr-container .ftr-box, .s-3, .s-2 > div, body header > div {
   max-width: 1280px;
   width: 100%;
   display: -webkit-box;
@@ -571,11 +571,11 @@ footer .ftr-container .yellow-box .tel a {
 }
 
 .abus-s-2 {
-  border: 2px solid red;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #F4F6FC;
 }
 .abus-s-2 .text-cont {
   width: 100%;
@@ -583,9 +583,13 @@ footer .ftr-container .yellow-box .tel a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .abus-s-2 .text-cont div {
-  width: 515px;
+  max-width: 515px;
+  width: 100%;
 }
 .abus-s-2 .text-cont div h5 {
   font-family: Poppins;
@@ -612,9 +616,30 @@ footer .ftr-container .yellow-box .tel a {
   font-weight: 400;
   line-height: 28px;
   color: #282938;
-  width: 515px;
+  max-width: 515px;
+  width: 100%;
+}
+.abus-s-2 .text-cont .text-box {
+  padding-top: 28px;
 }
 .abus-s-2 img {
   width: 100%;
   height: 340px;
+}
+
+.absu-s-3 {
+  border: 2px solid red;
+  padding-top: 128px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.absu-s-3 h2 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  color: #282938;
+  margin-bottom: 48px;
 }/*# sourceMappingURL=global.css.map */
