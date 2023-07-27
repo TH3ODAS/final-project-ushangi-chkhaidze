@@ -1,6 +1,5 @@
 .absu-s-3{
     @extend %container;
-    border: 2px solid red;
     padding-top: 128px;
     justify-content: center;
     flex-direction: column;
@@ -16,7 +15,6 @@
     }
     .card-wrapper{
         width: 100%;
-        border: 2px solid green;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
