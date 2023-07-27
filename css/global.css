@@ -533,12 +533,12 @@ footer .ftr-container .yellow-box .tel a {
           justify-content: space-between;
   margin-bottom: 128px;
 }
-.abus-s-1 div {
+.abus-s-1 .text-div {
   width: 595px;
   padding-top: 24px;
   padding-bottom: 9px;
 }
-.abus-s-1 div h4 {
+.abus-s-1 .text-div h4 {
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -547,7 +547,7 @@ footer .ftr-container .yellow-box .tel a {
   color: #282938;
   margin-bottom: 8px;
 }
-.abus-s-1 div h3 {
+.abus-s-1 .text-div h3 {
   width: 100%;
   font-family: Poppins;
   font-size: 54px;
@@ -557,7 +557,7 @@ footer .ftr-container .yellow-box .tel a {
   color: #282938;
   margin-bottom: 31px;
 }
-.abus-s-1 div p {
+.abus-s-1 .text-div p {
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -622,9 +622,12 @@ footer .ftr-container .yellow-box .tel a {
 .abus-s-2 .text-cont .text-box {
   padding-top: 28px;
 }
-.abus-s-2 img {
+.abus-s-2 .img-div {
+  background-image: url(../../images/3.0.0.5BannerNutritionaltips.jpg);
   width: 100%;
   height: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .absu-s-3 {

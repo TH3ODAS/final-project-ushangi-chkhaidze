@@ -43,8 +43,11 @@
             padding-top: 28px;
         }
     }
-    img{
+    .img-div{
+        background-image: url(../../images/3.0.0.5BannerNutritionaltips.jpg);
         width: 100%;
         height: 340px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
