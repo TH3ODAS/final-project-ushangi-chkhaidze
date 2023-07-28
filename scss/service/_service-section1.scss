@@ -1,0 +1,163 @@
+.service-s-1{
+    @extend %container;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    flex-direction: column;
+    h2{
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px;
+        color: $DarkBlue;
+        margin: 0 auto;
+    }
+    h4{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        color: $DarkBlue;
+        max-width: 562px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+    .card-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .card{
+            max-width: 406px;
+            width: 100%;
+            padding: 63px 48px;
+            background-color: $Grey;
+            a{
+                
+                div{
+                    color: $Grey;
+                    width: 230px;
+                    padding: 16px 56px;
+                    border-radius: 41px;
+                    background-color: $DarkBlue;
+                    font-family: Manrope;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                    cursor: pointer;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 79px;
+                    &:hover{
+                        background-color: #535460;
+                        color: $text-color-white;
+                        transition: 0.7s;
+                    }
+                }
+            }
+            h2{
+                font-family: Poppins;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 56px; 
+                color: $DarkBlue;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36px;
+                color: $DarkBlue;
+                margin-bottom: 8px;
+            }
+            p{
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                margin-bottom: 78px;
+            }
+            .tick-txt{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .checkmark {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    transform: rotate(45deg);
+                    margin-right: 12px;
+                    
+                    .checkmark_stem {
+                        position: absolute;
+                        width: 6px;
+                        height: 18px;
+                        background-color: #97DAAD;
+                        left: 11px;
+                        top: 0px;
+                    
+                    }
+                    .checkmark_kick {
+                        position: absolute;
+                        width: 10px;
+                        height: 6px;
+                        background-color: #97DAAD;
+                        left: 6px;
+                        top: 12px;
+                        
+                    }
+                    .grey-mark{
+                        background-color: darkgrey;
+                        
+                    }
+                   
+                }
+                 h5{
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                    color: $DarkBlue; 
+                }
+            }
+            
+        }
+        .blue{
+            background-color: #1C1E53;
+            h2{
+                color: $text-color-white;
+            }
+            h3{
+                color: $text-color-white;
+            }
+            p{
+                color: $text-color-white;
+            }
+            .tick-txt{
+                h5{
+                    color: $text-color-white;
+                }
+            }
+            a{
+                div{
+                    background-color: $Yellow;
+                    color: $DarkBlue;
+                    &:hover{
+                        background-color: $hover-background-color;
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
