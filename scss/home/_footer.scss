@@ -80,8 +80,11 @@ footer{
             @media(max-width:783px){
                justify-content: center;
             }
+            @media(max-width:400px){
+               width: 95%;
+            }
             .email{
-               width: 181px;
+               width: 200px;
                margin-right: 29px;
                @media(max-width: 783px){
                   text-align: center;
@@ -96,6 +99,12 @@ footer{
                   line-height: 32px;
                   color: $DarkBlue;
                   margin-bottom: 1px;
+                  @media (max-width: 460px){
+                     font-size: 16px;
+                 }
+                  @media (max-width: 400px){
+                     font-size: 14px;
+                 }
                }
                a{
                   font-family: Poppins;
@@ -104,10 +113,16 @@ footer{
                   font-weight: 400;
                   line-height: 28px;
                   color: $DarkBlue;
+                  @media (max-width: 460px){
+                     font-size: 14px;
+                 }
+                  @media (max-width: 400px){
+                     font-size: 12px;
+                 }
                }
             }
             .tel{
-               width: 181px;
+               width: 200px;
                @media(max-width: 783px){
                text-align: center;
                }
@@ -119,6 +134,12 @@ footer{
                   line-height: 32px;
                   color: $DarkBlue;
                   margin-bottom: 1px;
+                  @media (max-width: 460px){
+                     font-size: 16px;
+                 }
+                  @media (max-width: 400px){
+                     font-size: 14px;
+                 }
                }
                a{
                   font-family: Poppins;
@@ -127,6 +148,12 @@ footer{
                   font-weight: 400;
                   line-height: 28px;
                   color: $DarkBlue;
+                  @media (max-width: 400px){
+                     font-size: 14px;
+                 }
+                  @media (max-width: 400px){
+                     font-size: 12px;
+                 }
                }
             }
          }

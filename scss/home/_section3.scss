@@ -21,6 +21,10 @@
             font-weight: 600;
             line-height: 74px;
             color: $text-color-white;
+            @media(max-width: 490px){
+                font-size: 30px;
+                text-align: center;
+            }
         }
     }
     .login{
