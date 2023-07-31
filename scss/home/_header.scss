@@ -5,20 +5,33 @@ body{
             @extend %container;
             padding: 16px 0;
             justify-content: space-between;
-            @media(max-width:1672px){
+            align-items: center;
+            @media(max-width:1280px){
                 width: 95%;
             }
+            .fa-bars{
+                display: none;
+                color: $text-color-lightblue;
+                &:hover{
+                    background-color: $link-color-black;
+                    color: $text-color-white;
+                    transition: 0.7s;
+                }
+                @media (max-width:1064px){
+                    display: block;
+                }
+            }
+            
             .logo{
                 width: 122px;
                 height: 45px;
             }
-            .fa-bars{
-                display: none;
-                @include icon
-            }
             .nav-bar{
-                width: 706px;
-                padding: 16px 0;
+                max-width: 706px;
+                width: 100%;
+                @media (max-width:1064px){
+                    display: none;
+                }
                 ul{
                     display: flex;
                     justify-content: space-between;
@@ -30,13 +43,13 @@ body{
                         font-weight: 500;
                         a{
                             color: $text-color-lightblue;
+                            
                         }
                         .active{
                             color: $text-color-white;
                         }
                         .Contact{
                             width: 185px;
-                            
                             padding: 16px 48px;
                             border-radius: 41px;
                             border: 2px solid rgba(244, 246, 252, 0.20);

@@ -2,7 +2,8 @@
     @extend %container;
     margin-bottom: 128px;
     .bg-box{
-        width: 656px;
+        max-width: 656px;
+        width: 100%;
         background-image: url(https://img.freepik.com/premium-photo/healthy-lifestyle-food-sport-concept-athlete-s-equipment-fresh-fruit-black-background_61573-3387.jpg);
         padding: 96px 110px;
         background-position: center;
