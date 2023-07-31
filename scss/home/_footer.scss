@@ -12,6 +12,12 @@ footer{
          .ftr-box{
             @extend %container;
             justify-content: space-between;
+            flex-wrap: wrap;
+            @media (max-width:1115px){
+               justify-content: center;
+               align-items: center;
+               text-align: center;
+            }
             div{
                display: flex;
                width: 399px;
@@ -49,6 +55,10 @@ footer{
                   width: 101.33px;
                   flex-direction: row;
                   justify-content: space-between;
+                  @media (max-width:1115px){
+                     margin: 0 auto;
+                     margin-bottom: 20px;
+                  }
                      .ft-logo{
                         width: 16px;
                         height: 16px;
@@ -62,9 +72,22 @@ footer{
             padding: 18px 37px;
             background-color: $Yellow;
             display: flex;
+            flex-wrap: wrap;
+            @media(max-width:1115px){
+               margin: 0 auto;
+               justify-content: space-between;
+            }
+            @media(max-width:783px){
+               justify-content: center;
+            }
             .email{
                width: 181px;
                margin-right: 29px;
+               @media(max-width: 783px){
+                  text-align: center;
+                  margin-bottom: 10px;
+                  margin-right: 0;
+               }
                h3{
                   font-family: Poppins;
                   font-size: 18px;
@@ -84,7 +107,10 @@ footer{
                }
             }
             .tel{
-               width: 133px;
+               width: 181px;
+               @media(max-width: 783px){
+               text-align: center;
+               }
                h3{
                   font-family: Poppins;
                   font-size: 18px;

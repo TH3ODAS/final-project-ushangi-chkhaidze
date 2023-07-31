@@ -1,6 +1,11 @@
 .s-3{
     @extend %container;
     margin-bottom: 128px;
+    flex-wrap: wrap;
+    @media(max-width:1280px){
+        width: 90%;
+        justify-content: center;
+    }
     .bg-box{
         max-width: 656px;
         width: 100%;
@@ -19,9 +24,13 @@
         }
     }
     .login{
-        width: 624px;
+        max-width: 624px;
+        width: 100%;
         background-color: $TintBlue;
         padding: 48px 96px;
+        @media(max-width:1280px){
+            text-align: center;
+        }
         h3{
             font-family: Poppins;
             font-size: 32px;
@@ -42,7 +51,8 @@
         }
         form{
             input{
-                width: 432px;
+                max-width: 432px;
+                width: 100%;
                 border-radius: 8px;
                 outline: none;
                 border: 1.5px solid rgba(255, 255, 255, 0.05);
@@ -50,10 +60,17 @@
                 background-color: $TintBlue;
                 color: $Grey;
                 margin-bottom: 16px;
+                @media(max-width: 1280px){
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
             }
             #submit{
                 display: flex;
-                width: 432px;
+                max-width: 432px;
+                width: 100%;
                 padding: 15px 51px;
                 justify-content: center;
                 align-items: center;

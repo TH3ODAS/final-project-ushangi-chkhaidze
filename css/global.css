@@ -288,7 +288,8 @@ body header > div .nav-bar ul li .Contact:hover {
   background-color: #F4F6FC;
   margin-bottom: 128px;
 }
-.s-2 .headline {
+.s-2 > p {
+  max-width: 630px;
   font-family: Poppins;
   font-size: 48px;
   font-style: normal;
@@ -296,7 +297,7 @@ body header > div .nav-bar ul li .Contact:hover {
   line-height: 64px;
   color: #282938;
   margin-bottom: 47px;
-  width: 630px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 47px;
 }
@@ -357,6 +358,16 @@ body header > div .nav-bar ul li .Contact:hover {
 }
 .s-3 {
   margin-bottom: 128px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 1280px) {
+  .s-3 {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .s-3 .bg-box {
   max-width: 656px;
@@ -376,9 +387,15 @@ body header > div .nav-bar ul li .Contact:hover {
   color: #FFFFFF;
 }
 .s-3 .login {
-  width: 624px;
+  max-width: 624px;
+  width: 100%;
   background-color: #1C1E53;
   padding: 48px 96px;
+}
+@media (max-width: 1280px) {
+  .s-3 .login {
+    text-align: center;
+  }
 }
 .s-3 .login h3 {
   font-family: Poppins;
@@ -399,7 +416,8 @@ body header > div .nav-bar ul li .Contact:hover {
   margin-bottom: 40px;
 }
 .s-3 .login form input {
-  width: 432px;
+  max-width: 432px;
+  width: 100%;
   border-radius: 8px;
   outline: none;
   border: 1.5px solid rgba(255, 255, 255, 0.05);
@@ -408,11 +426,26 @@ body header > div .nav-bar ul li .Contact:hover {
   color: #F4F6FC;
   margin-bottom: 16px;
 }
+@media (max-width: 1280px) {
+  .s-3 .login form input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .s-3 .login form #submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 432px;
+  max-width: 432px;
+  width: 100%;
   padding: 15px 51px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -453,6 +486,19 @@ footer .ftr-container .ftr-box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 1115px) {
+  footer .ftr-container .ftr-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 footer .ftr-container .ftr-box div {
   display: -webkit-box;
@@ -510,6 +556,12 @@ footer .ftr-container .ftr-box div div {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1115px) {
+  footer .ftr-container .ftr-box div div {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 footer .ftr-container .ftr-box div div .ft-logo {
   width: 16px;
   height: 16px;
@@ -522,10 +574,34 @@ footer .ftr-container .yellow-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 1115px) {
+  footer .ftr-container .yellow-box {
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 783px) {
+  footer .ftr-container .yellow-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 footer .ftr-container .yellow-box .email {
   width: 181px;
   margin-right: 29px;
+}
+@media (max-width: 783px) {
+  footer .ftr-container .yellow-box .email {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
 }
 footer .ftr-container .yellow-box .email h3 {
   font-family: Poppins;
@@ -545,7 +621,12 @@ footer .ftr-container .yellow-box .email a {
   color: #282938;
 }
 footer .ftr-container .yellow-box .tel {
-  width: 133px;
+  width: 181px;
+}
+@media (max-width: 783px) {
+  footer .ftr-container .yellow-box .tel {
+    text-align: center;
+  }
 }
 footer .ftr-container .yellow-box .tel h3 {
   font-family: Poppins;
