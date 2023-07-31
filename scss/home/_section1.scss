@@ -14,15 +14,20 @@
             flex-direction: column;
             align-items: center;
         }
-        @media(max-width:1672px){
-            width: 95%;
+        @media(max-width: 410px){
+            width: 93%;
         }
         img{
-            width: 478px;
+            max-width: 478px;
+            width: 100%;
             height: 395px;
+            @media (max-width: 581px){
+                object-fit: contain;
+            }
         }
         &>div{
-            width: 582px;
+            max-width: 582px;
+            width: 100%;
             display: flex;
             flex-direction: column;
             @media (max-width:1064px){
@@ -37,6 +42,9 @@
                 font-weight: 600;
                 line-height: 74px;
                 margin-bottom: 24px;
+                @media(max-width: 581px){
+                    font-size: 30px;
+                }
             }
             p{
                 font-family: Poppins;
