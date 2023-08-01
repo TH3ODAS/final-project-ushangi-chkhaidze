@@ -302,6 +302,21 @@ body header > div .nav-bar ul li .Contact:hover {
   background-color: #F4F6FC;
   margin-bottom: 128px;
 }
+@media (max-width: 660px) {
+  .s-2 {
+    padding: 108px 140px;
+  }
+}
+@media (max-width: 460px) {
+  .s-2 {
+    padding: 88px 120px;
+  }
+}
+@media (max-width: 430px) {
+  .s-2 {
+    padding: 68px 90px;
+  }
+}
 .s-2 > p {
   max-width: 630px;
   font-family: Poppins;
@@ -340,6 +355,13 @@ body header > div .nav-bar ul li .Contact:hover {
             justify-content: space-evenly;
   }
 }
+@media (max-width: 490px) {
+  .s-2 > div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .s-2 > div div {
   max-width: 405px;
   width: 100%;
@@ -353,10 +375,9 @@ body header > div .nav-bar ul li .Contact:hover {
     text-align: center;
   }
 }
-@media (max-width: 490px) {
+@media (max-width: 630px) {
   .s-2 > div div {
-    padding: 10px;
-    width: 200px;
+    padding: 30px 10px;
   }
 }
 .s-2 > div div .fa-bottle-water {
@@ -430,36 +451,27 @@ body header > div .nav-bar ul li .Contact:hover {
   width: 100%;
   margin-bottom: 12px;
 }
-@media (max-width: 490px) {
+@media (max-width: 600px) {
   .s-2 > div div h2 {
-    font: size 16px;
+    font-size: 16px;
   }
 }
 @media (max-width: 460px) {
   .s-2 > div div h2 {
-    font-size: 10px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 @media (max-width: 404px) {
   .s-2 > div div h2 {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
-@media (max-width: 490px) {
+@media (max-width: 600px) {
   .s-2 > div div p {
-    font-size: 12px;
-  }
-}
-@media (max-width: 460px) {
-  .s-2 > div div p {
-    font-size: 8px;
-  }
-}
-@media (max-width: 430px) {
-  .s-2 > div div p {
-    font-size: 6px;
-    line-height: 6px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -589,6 +601,11 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 510px) {
+  footer {
+    padding: 94px 109px;
+  }
 }
 footer .ftr-container {
   max-width: 1280px;

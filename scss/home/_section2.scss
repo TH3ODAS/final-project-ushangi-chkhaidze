@@ -5,6 +5,15 @@
     padding: 128px 160px;
     background-color: $Grey;
     margin-bottom: 128px;
+    @media(max-width:660px){
+        padding: 108px 140px;
+    }
+    @media(max-width:460px){
+        padding: 88px 120px;
+    }
+    @media(max-width:430px){
+        padding: 68px 90px;
+    }
     &>p{
         max-width: 630px;
         font-family: Poppins;
@@ -32,6 +41,9 @@
         @media (max-width:1920px){
             justify-content: space-evenly;
         }
+        @media (max-width: 490px){
+            justify-content: flex-start;
+        }
         div{
             max-width: 405px;
             width: 100%;
@@ -42,9 +54,8 @@
             @media(max-width: 1126px){
                 text-align: center;
             }
-            @media (max-width: 490px){
-                padding: 10px;
-                width: 200px;
+            @media (max-width: 630px){
+                padding: 30px 10px;
             }
             .fa-bottle-water{
                 @include icon;
@@ -93,28 +104,23 @@
                 width: 100%;
                 @extend %card-headline;
                 margin-bottom: 12px;
-                @media (max-width: 490px){
-                    font: size 16px;
+                @media (max-width: 600px){
+                    font-size: 16px;
                 }
                 @media(max-width: 460px){
-                    font-size: 10px;
+                    font-size: 20px;
+                    line-height: 20px;
                 }
                 @media(max-width: 404px){
-                    font-size: 10px;
-                    line-height: 16px;
+                    font-size: 20px;
+                    line-height: 24px;
                 }
             }
             p{
                 @extend %card-text;
-                @media(max-width: 490px){
-                    font-size: 12px;
-                }
-                @media(max-width: 460px){
-                    font-size: 8px;
-                }
-                @media(max-width: 430px){
-                    font-size: 6px;
-                    line-height: 6px;
+                @media(max-width: 600px){
+                    font-size: 14px;
+                    line-height: 20px;
                 }
             }
         }
