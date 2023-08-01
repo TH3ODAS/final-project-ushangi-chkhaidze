@@ -41,6 +41,10 @@
                 max-width: 432px;
                 width: 100%;
                 margin-bottom: 42px;
+                @media(max-width:1061px){
+                    max-width: 908px;
+                    width: 100%;
+                }
                 label{
                     font-family: Poppins;
                     font-size: 18px;
@@ -70,6 +74,7 @@
                     cursor: pointer;
                     @media (max-width:1061px){
                         max-width: 908px;
+                        padding: 10px 31px;
                     }
                     &:hover{
                         background-color: #535460;
@@ -79,9 +84,9 @@
                 }
                 input{
                     @extend %form-placeholde;
-                    @media(max-width:1061px){
-                        max-width: 908px;
-                        width: 100%;
+                    &:hover{
+                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        transition: 0.7s;
                     }
                 }
                 textarea{
@@ -89,6 +94,10 @@
                     @extend %form-placeholder;
                     height: 138px;
                     margin-bottom: 32px;
+                    &:hover{
+                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        transition: 0.7s;
+                    }
                 }
             }
             .textarea{
