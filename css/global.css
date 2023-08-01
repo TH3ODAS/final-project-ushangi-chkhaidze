@@ -1902,6 +1902,7 @@ footer .ftr-container .yellow-box .tel a {
 @media (max-width: 1061px) {
   .contact-s-1 {
     width: 90%;
+    text-align: center;
   }
 }
 .contact-s-1 h2 {
@@ -1944,8 +1945,14 @@ footer .ftr-container .yellow-box .tel a {
       flex-wrap: wrap;
 }
 .contact-s-1 .form-box form div {
-  width: 432px;
+  max-width: 432px;
+  width: 100%;
   margin-bottom: 42px;
+}
+@media (max-width: 1061px) {
+  .contact-s-1 .form-box form div {
+    max-width: 908px;
+  }
 }
 .contact-s-1 .form-box form div label {
   font-family: Poppins;
@@ -1956,11 +1963,6 @@ footer .ftr-container .yellow-box .tel a {
   color: #000;
   margin-bottom: 6px;
 }
-.contact-s-1 .form-box form div textarea {
-  resize: none;
-  height: 138px;
-  margin-bottom: 32px;
-}
 .contact-s-1 .form-box form div .submit {
   font-family: Manrope;
   font-size: 18px;
@@ -1970,7 +1972,8 @@ footer .ftr-container .yellow-box .tel a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 254px;
+  max-width: 254px;
+  width: 100%;
   height: 64px;
   padding: 15px 51px;
   -webkit-box-pack: center;
@@ -1990,6 +1993,49 @@ footer .ftr-container .yellow-box .tel a {
   color: #FFFFFF;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+@media (max-width: 1061px) {
+  .contact-s-1 .form-box form div .submit {
+    max-width: 908px;
+    padding: 10px 31px;
+  }
+}
+@media (max-width: 380px) {
+  .contact-s-1 .form-box form div .submit {
+    font-size: 14px;
+  }
+}
+@media (max-width: 300px) {
+  .contact-s-1 .form-box form div .submit {
+    font-size: 10px;
+  }
+}
+.contact-s-1 .form-box form div input:hover {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+@media (max-width: 385px) {
+  .contact-s-1 .form-box form div input {
+    font-size: 10px;
+    padding: 10px 8px;
+  }
+}
+.contact-s-1 .form-box form div textarea {
+  resize: none;
+  height: 138px;
+  margin-bottom: 32px;
+}
+.contact-s-1 .form-box form div textarea:hover {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+@media (max-width: 385px) {
+  .contact-s-1 .form-box form div textarea {
+    font-size: 10px;
+    padding: 10px 10px;
+  }
 }
 .contact-s-1 .form-box form .textarea {
   max-width: 908px;
