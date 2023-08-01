@@ -34,6 +34,9 @@
                 text-align: center;
                 align-items: center;
             }
+            @media (max-width:530px){
+                width: 95%;
+            }
             h1{
                 color: $text-color-white;
                 font-family: Poppins;
@@ -44,6 +47,10 @@
                 margin-bottom: 24px;
             @media (max-width: 600px){
                 font-size: 30px;
+            }
+            @media (max-width: 500px){
+                font-size: 20px;
+                line-height: 28px;
             }
             }
             p{

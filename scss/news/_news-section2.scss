@@ -1,13 +1,25 @@
 .news-s-2{
     @extend %container;
-    
     justify-content: space-between;
+    @media (max-width:1280px){
+        width: 95%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    @media (max-width:1273px){
+        text-align: center;
+        justify-content: center;
+    }
+
     .text-box{
         display: flex;
         flex-direction: column;
         padding: 41px 0;
         width: 624px;
         margin-bottom: 128px;
+        @media(max-width:1273px)  {
+            margin-bottom: 0;
+        }
         h5{
             color: #000;
             font-family: Poppins;
@@ -25,6 +37,9 @@
             line-height: 56px;
             color: $black;
             margin-bottom: 16px;
+            @media(max-width: 320px){
+                font-size: 32px;
+            }
         }
         p{
             font-family: Poppins;
@@ -43,5 +58,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        @media(max-width:1273px)  {
+            margin-bottom: 87px;
+        }
     }
 }

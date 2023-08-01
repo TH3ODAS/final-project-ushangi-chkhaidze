@@ -6,6 +6,10 @@
     .team-container{
         @extend %container;
         flex-direction: column;
+        @media(max-width: 1280px){
+            width: 95%;
+            text-align: center;
+        }
         h3{
             font-family: Poppins;
             font-size: 48px;
@@ -21,6 +25,10 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            @media (max-width:1280px){
+                gap: 15px;
+                justify-content: space-evenly;
+            }
             .card{
                 width: 296px;
                 padding-top: 48px;

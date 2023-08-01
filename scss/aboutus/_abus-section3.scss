@@ -4,6 +4,12 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 128px;
+    @media(max-width:1280px){
+        width: 95%;
+    }
+    @media (max-width:583px){
+        text-align: center;
+    }
     h2{
         font-family: Poppins;
         font-size: 48px;
@@ -19,6 +25,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media (max-width:1145px){
+            justify-content: space-evenly;
+            row-gap: 15px;  
+            column-gap: 10px;      
+        }
         .card{
             max-width: 272px;
             width: 100%;
