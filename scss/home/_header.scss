@@ -9,19 +9,63 @@ body{
             @media(max-width:1280px){
                 width: 95%;
             }
-            .fa-bars{
+            .dropdown {
+                position: relative;
+                float: right;
                 display: none;
-                color: $text-color-lightblue;
-                &:hover{
-                    background-color: $link-color-black;
-                    color: $text-color-white;
-                    transition: 0.7s;
-                }
                 @media (max-width:1064px){
+                    display: inline-block
+                }
+                .fa-bars{
+                    display: none;
+                    color: $text-color-white;
+                    &:hover{
+                        color: $text-color-lightblue;
+                        transition: 0.7s;
+                    }
+                    @media (max-width:1064px){
+                        display: block;
+                    }
+                }
+                &:hover .dropdown-content {
                     display: block;
                 }
+                .dropbtn {
+                    border: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    background-color: $TintBlue;
+                    width: 100px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    &:hover{
+                        display: block;
+                    }
+                    a {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: flex-end;
+                        font-family: Poppins;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        color: $text-color-lightblue;
+                        &:hover {
+                            background-color: $TintBlue;
+                            color: $text-color-white;
+                            transition: 0.7s;
+                        }
+                    }
+                }
             }
-            
             .logo{
                 width: 122px;
                 height: 45px;
@@ -43,10 +87,18 @@ body{
                         font-weight: 500;
                         a{
                             color: $text-color-lightblue;
+                            &:hover{
+                                color: $text-color-white;
+                                transition: 0.7s;
+                            }
                             
                         }
                         .active{
                             color: $text-color-white;
+                            &:hover{
+                                color: $text-color-lightblue;
+                                transition: 0.7s;
+                            }
                         }
                         .Contact{
                             width: 185px;

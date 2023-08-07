@@ -91,7 +91,7 @@
                 input{
                     @extend %form-placeholder;
                     &:hover{
-                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        border: 1px solid $link-color-black;
                         transition: 0.7s;
                     }
                     @media (max-width:385px){
@@ -105,7 +105,7 @@
                     height: 138px;
                     margin-bottom: 32px;
                     &:hover{
-                        border: 1px solid rgba(0, 0, 0, 0.12);
+                        border: 1px solid $link-color-black;
                         transition: 0.7s;
                     }
                     @media (max-width:385px){

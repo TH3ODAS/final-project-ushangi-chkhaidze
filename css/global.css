@@ -120,20 +120,73 @@ body header > div {
     width: 95%;
   }
 }
-body header > div .fa-bars {
+body header > div .dropdown {
+  position: relative;
+  float: right;
   display: none;
-  color: #BBBBCB;
 }
-body header > div .fa-bars:hover {
-  background-color: #1B1C2B;
+@media (max-width: 1064px) {
+  body header > div .dropdown {
+    display: inline-block;
+  }
+}
+body header > div .dropdown .fa-bars {
+  display: none;
   color: #FFFFFF;
+}
+body header > div .dropdown .fa-bars:hover {
+  color: #BBBBCB;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 @media (max-width: 1064px) {
-  body header > div .fa-bars {
+  body header > div .dropdown .fa-bars {
     display: block;
   }
+}
+body header > div .dropdown:hover .dropdown-content {
+  display: block;
+}
+body header > div .dropdown .dropbtn {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+body header > div .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1C1E53;
+  width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+body header > div .dropdown .dropdown-content:hover {
+  display: block;
+}
+body header > div .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  color: #BBBBCB;
+}
+body header > div .dropdown .dropdown-content a:hover {
+  background-color: #1C1E53;
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 body header > div .logo {
   width: 122px;
@@ -168,8 +221,18 @@ body header > div .nav-bar ul li {
 body header > div .nav-bar ul li a {
   color: #BBBBCB;
 }
+body header > div .nav-bar ul li a:hover {
+  color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
 body header > div .nav-bar ul li .active {
   color: #FFFFFF;
+}
+body header > div .nav-bar ul li .active:hover {
+  color: #BBBBCB;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 body header > div .nav-bar ul li .Contact {
   width: 185px;
@@ -204,6 +267,11 @@ body header > div .nav-bar ul li .Contact:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .s-1 > div {
+    width: 93%;
+  }
 }
 @media (max-width: 1064px) {
   .s-1 > div {
@@ -508,10 +576,21 @@ body header > div .nav-bar ul li .Contact:hover {
   max-width: 656px;
   width: 100%;
   background-image: url(https://img.freepik.com/premium-photo/healthy-lifestyle-food-sport-concept-athlete-s-equipment-fresh-fruit-black-background_61573-3387.jpg);
-  padding: 96px 110px;
+  padding: 96px 120px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
+}
+@media (max-width: 490px) {
+  .s-3 .bg-box {
+    padding: 60px 68px;
+  }
+}
+@media (max-width: 360px) {
+  .s-3 .bg-box {
+    padding: 48px 55px;
+  }
 }
 .s-3 .bg-box h2 {
   font-family: Poppins;
@@ -521,10 +600,23 @@ body header > div .nav-bar ul li .Contact:hover {
   line-height: 74px;
   color: #FFFFFF;
 }
-@media (max-width: 490px) {
+@media (max-width: 635px) {
   .s-3 .bg-box h2 {
     font-size: 30px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 490px) {
+  .s-3 .bg-box h2 {
+    font-size: 25px;
     text-align: center;
+    line-height: 46px;
+  }
+}
+@media (max-width: 360px) {
+  .s-3 .bg-box h2 {
+    font-size: 20px;
+    line-height: 37px;
   }
 }
 .s-3 .login {
@@ -536,6 +628,11 @@ body header > div .nav-bar ul li .Contact:hover {
 @media (max-width: 1280px) {
   .s-3 .login {
     text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .s-3 .login {
+    padding: 24px;
   }
 }
 .s-3 .login h3 {
@@ -567,6 +664,9 @@ body header > div .nav-bar ul li .Contact:hover {
   color: #F4F6FC;
   margin-bottom: 16px;
 }
+.s-3 .login form input:hover {
+  border: 1px solid white;
+}
 @media (max-width: 1280px) {
   .s-3 .login form input {
     display: -webkit-box;
@@ -579,6 +679,12 @@ body header > div .nav-bar ul li .Contact:hover {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .s-3 .login form input {
+    padding: 18px 16px;
+    font-size: 10px;
   }
 }
 .s-3 .login form #submit {
@@ -601,10 +707,18 @@ body header > div .nav-bar ul li .Contact:hover {
   cursor: pointer;
 }
 .s-3 .login form #submit:hover {
+  border: none;
   background-color: #FDE4A6;
   color: #585858;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+@media (max-width: 360px) {
+  .s-3 .login form #submit {
+    padding: 18px 16px;
+    font-size: 10px;
+    max-width: 100%;
+  }
 }
 
 footer {
@@ -625,7 +739,12 @@ footer {
 }
 @media (max-width: 370px) {
   footer {
-    padding: 74px 89px;
+    padding: 74px 49px;
+  }
+}
+@media (max-width: 280px) {
+  footer {
+    padding: 74px 0px;
   }
 }
 footer .ftr-container {
@@ -2011,7 +2130,7 @@ footer .ftr-container .yellow-box .tel a {
   }
 }
 .contact-s-1 .form-box form div input:hover {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #1B1C2B;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -2027,7 +2146,7 @@ footer .ftr-container .yellow-box .tel a {
   margin-bottom: 32px;
 }
 .contact-s-1 .form-box form div textarea:hover {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #1B1C2B;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }

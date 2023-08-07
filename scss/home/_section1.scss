@@ -10,6 +10,9 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        @media(max-width:1280px){
+            width: 93%;
+        }
         @media(max-width:1064px){
             flex-direction: column;
             align-items: center;

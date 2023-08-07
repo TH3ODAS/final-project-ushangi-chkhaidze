@@ -9,7 +9,10 @@ footer{
       padding: 94px 109px;
     }
     @media(max-width:370px){
-      padding: 74px 89px;
+      padding: 74px 49px;
+    }   
+    @media(max-width:280px){
+      padding: 74px 0px;
     }   
     .ftr-container{
       max-width: 1280px;
